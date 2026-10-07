@@ -1,0 +1,7 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "loopitis": "./src/loopitis/agent/graph.py:agent"
+  },
+  "env": ".env"
+}

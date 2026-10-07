@@ -1,0 +1,36 @@
+[project]
+name = "loopitis"
+version = "0.1.0"
+description = "A LangChain deep agent that turns Ableton Live session loops into a full arrangement"
+readme = "README.md"
+authors = [
+    { name = "Richard Corke", email = "45803053+sandriches@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "deepagents>=0.7.22",
+    "langchain-anthropic>=1.7.5",
+    "langgraph-cli[inmem]>=0.4.32",
+    "langsmith>=0.14.4",
+    "pydantic>=2.13.5",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+loopitis-eval = "loopitis.evals.run:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.16.10",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
