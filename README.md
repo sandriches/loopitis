@@ -61,3 +61,7 @@ uv run pytest
 ```
 
 everything runs offline, including a test that drives the full agent with a scripted fake model, approval step and all.
+
+## License
+
+MIT, see [LICENSE](LICENSE).

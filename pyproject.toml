@@ -3,6 +3,8 @@ name = "loopitis"
 version = "0.1.0"
 description = "A LangChain deep agent that turns Ableton Live session loops into a full arrangement"
 readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
 authors = [
     { name = "Richard Corke", email = "45803053+sandriches@users.noreply.github.com" }
 ]
